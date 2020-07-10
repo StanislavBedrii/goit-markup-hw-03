@@ -1,0 +1,227 @@
+body {
+  background-color: var(--primary-bgr-color);
+  color: var(--primary-title-color);
+  font-family: var(--main-font);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+/* цвет основного текста заголовков (nav, h2-6) #212121; */
+/* цвет основного текста (p, a) #757575; */
+/* белый цвет на темном фоне (h1, p, btn, (блок3)) #FFFFFF; */
+/* акцент (btn, logo, a) #2196F3 */
+/* цвет лого #000000 */
+/* цвет адреса подвала  rgba(255, 255, 255, 0.6) */
+
+/* цвет основного фона #FFFFFF */
+/* цвет вторичного (белого) фона #F5F4FA; */
+/* цвет вторичного (серого) фона rgba(47, 48, 58, 0.8) */
+/* фон подвала #2F303A */
+
+/* ROOT */
+:root {
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --primary-title-color: #212121;
+  --primary-text-color: #757575;
+  --secondary-white-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --footer-address-text-color: rgba(255, 255, 255, 0.6);
+  --primary-bgr-color: #ffffff;
+  --secondary-bgr-color: rgba(47, 48, 58, 0.8);
+  --footer-bgr-color: #2f303a;
+}
+/* RESET decoration */
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+
+/* Шапка страницы */
+/* Оформление логотипа */
+.logo,
+.logo-web {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #000000;
+}
+.logo-web {
+  color: var(--accent-color);
+}
+/* Оформление nav */
+.nav-list-link {
+  color: var(--primary-title-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav-list-link:hover,
+.nav-list-link:focus {
+  color: var(--accent-color);
+}
+
+/* Оформление контактов в хедере */
+.header-contacts-mail,
+.header-contacts-tel {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+.header-contacts-mail:hover,
+.header-contacts-mail:focus,
+.header-contacts-tel:hover,
+.header-contacts-tel:focus {
+  color: var(--accent-color);
+}
+
+/* Оформление секции ГЕРОЙ */
+.hero {
+  background-color: var(--secondary-bgr-color);
+}
+.title-hero {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--secondary-white-text-color);
+}
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--secondary-white-text-color);
+}
+
+/* Оформление секции НАШИ ПРЕИМУЩЕСТВА */
+.advantages-list-name {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.advantages-description {
+  font-weight: 400;
+  line-height: 1.71;
+  color: var(--primary-text-color);
+}
+
+/* Оформление секции Чем мы занимаемся */
+/* для всех title - h2 */
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.we-doing-description {
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: var(--secondary-bgr-color);
+  color: var(--secondary-white-text-color);
+}
+
+/* Оформление секции НАША КОМАНДА */
+.our-team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.our-team-profession {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
+/* Оформление ПОДВАЛА страницы */
+.footer {
+  background-color: var(--footer-bgr-color);
+}
+.footer-logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--secondary-white-text-color);
+}
+.footer-address-map {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1/71;
+  color: var(--secondary-white-text-color);
+}
+.footer-address-mail,
+.footer-address-tel {
+  font-weight: 400;
+  line-height: 1.71;
+  color: var(--footer-address-text-color);
+}
+.join {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--secondary-white-text-color);
+}
+
+.footer-address-mail:hover,
+.footer-address-mail:focus,
+.footer-address-tel:hover,
+.footer-address-tel:focus,
+.footer-address-map:hover,
+.footer-address-map:focus {
+  color: var(--accent-color);
+}
+
+/* Оформление страницы ПОРТФОЛИО */
+/* Оформление фильтер-кнопок */
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  background-color: var(--primary-bgr-color);
+  color: var(--primary-title-color);
+}
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--accent-color);
+  color: var(--secondary-white-text-color);
+}
+
+/* Оформление примеров-работ */
+.work-examples-title {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--primary-title-color);
+  letter-spacing: 0.06em;
+}
+
+.work-examples-subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--primary-text-color);
+}
+.work-examples-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  /* color: var(--secondary-white-text-color); */
+  color: var(--primary-text-color);
+}
